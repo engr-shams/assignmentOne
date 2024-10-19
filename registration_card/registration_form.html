@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Responsive Registration Form </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="titles">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <label for="fname" class="details">Full Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your full name" required>
+          </div>
+          <div class="input-box input-box-adjust">
+            <label for="username" class="details">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <label for="email" class="details">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box input-box-adjust">
+            <label for="phone" class="details">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="input-box">
+            <label for="password" class="details">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box input-box-adjust">
+            <label for="confirm-password" class="details">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        
+        <div class="gender-details">
+          <span class="gender-title">Gender:</span>
+          <div class="category">
+            
+            <!-- Radio button for Male -->
+            <input type="radio" name="gender" id="dot-1">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+        
+            <!-- Radio button for Female -->
+            <input type="radio" name="gender" id="dot-2">
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+        
+            <!-- Radio button for Other -->
+            <input type="radio" name="gender" id="dot-3">
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Other</span>
+            </label>
+
+          </div>
+        </div>
+        
+        <!-- <table style='background-color:#025624;' border-radius-right: 15px;></table> -->
+
+          <!-- <div style="display: flex; justify-content: flex-start; gap: 10px; margin-top: 20px; width:auto;"> -->
+          <div class="button">
+            <div class="button">
+              <input type="button" value="Cancel" style="background-color:rgb(255, 35, 35)" >
+            </div>
+            <div class="button">
+              <input type="submit" value="Submit" style="background-color:rgb(18, 219, 0)">
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+
+      
+</body>
+</html>

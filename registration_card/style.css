@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;  /* padding between body and container */
+    background: linear-gradient(135deg, #e67171, #32b721);
+  }
+
+  .container {
+    max-width: 850px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px 25px 5px;
+    margin : 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .titles {
+    padding: 5px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+  }
+
+/* Container to hold input boxes */
+form .user-details {
+    display: flex;
+    flex-wrap: wrap;  /* Allows multiple input boxes per row considering container size, if width exceeded wrap to next line */
+    justify-content: space-between;
+    gap: 15px; /* Adds spacing between the fields */
+  }
+  
+  /* Each input box (label + input) container */
+  form .user-details .input-box {
+    width: calc(50% - 10px); /* Two input boxes per row */
+    display: flex;      /* Display input box and label in same row  */
+  }
+  
+  /* Uniform label width */
+  .input-box label {
+    width: 100px; /* Set fixed width for all labels */
+    margin-right: 3px;
+    color: #4CAF50;
+    justify-content: right;
+  }
+
+  /* Uniform label width */
+  .input-box-adjust label {
+    width: 140px; /* Set fixed width for all right labels */
+  }
+  
+  /* Input field styling */
+  form .user-details .input-box input {
+    flex: 1;  /*all the flexible items be the same length, regardless of its content:*/
+    height: 35px;
+    border: 3px solid #ccc;
+    outline: #4CAF50 solid 3px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field focus effect */
+  form .user-details .input-box input:focus {
+    border-color: #9b59b6;
+  }
+  
+
+  
+
+  
+  /* Button styling */
+  form .button {    
+    display: flex; justify-content: flex-start; flex-direction: row;  gap: 10px;  margin: 5px 0px 0px 20px; 
+    width: auto; /* Make buttons smaller*/
+  } 
+
+  form .a {    
+    background: linear-gradient(135deg, #32b721,#e67171 );
+  } 
+  
+  form .button input {
+    padding: 10px 20px; /* Smaller padding for compact buttons*/
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  form .button input:hover {
+    background: linear-gradient(135deg, #e67171, #32b721);
+    color: tomato;    
+    transform:scale(1.2);
+  }
+
+  
+  
+  
+
+  /* Container for gender title and radio buttons */
+.gender-details {
+  display: flex;
+  justify-content: start;
+  align-items: center; /* Align items vertically in the center */
+  height: 10vh;
+  margin: 5px 0px 0px 40px; 
+  gap: 40px; /* Space between the title and the radio button section */
+}
+
+/* Labels: radio button (dot) and text aligned in a row */
+.gender-title {
+  color: #a6ce03;
+}
+
+/* Radio button section (labels) in a row */
+.category {
+  display: flex;
+  gap: 10px; /* Space between individual options */
+  align-items: center;
+}
+
+/* Hide native radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Labels: radio button (dot) and text aligned in a row */
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between the dot and the label text */
+  color: #a6ce03;
+  cursor: pointer;
+}
+
+/* Dot styling */
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #a6ce03;
+  transition: background-color 0.3s;
+}
+
+/* Background change on radio button selection */
+#dot-1:checked + label .one,
+#dot-2:checked + label .two,
+#dot-3:checked + label .three {
+  background-color: #4CAF50;
+}
+
+  
+  
+  
+
+
+
+  /* Responsive design */
+  @media (max-width: 850px) {
+    form .user-details .input-box {
+      width: 100%; /* Stacks input fields on smaller screens */
+    }
+  }
+  
