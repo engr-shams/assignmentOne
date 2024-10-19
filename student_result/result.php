@@ -1,7 +1,7 @@
 <?php
 while(true){
 a:
-$sub1=30;
+$sub1=93;
 $sub2=33;
 $sub3=33;
 $sub4=60;
